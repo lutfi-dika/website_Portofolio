@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portiofolio</title>
+    <link rel="website icon" type="jpg" href="336106bdd62c1e09153329d88506a798.jpg">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="tentang.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="syle.css" />
+    <link href="https://unpkg.com/lucide-icons/dist/umd/lucide.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar">
+            <div class="logo" id="text"  data-aos-duration="10000"></div>
+        <script>
+               const text = "my portfolio";
+        let index = 0;
+        function typeEffect() {
+            if (index < text.length) {
+                document.getElementById("text").innerHTML += text[index] + "&nbsp;";
+                index++;
+                setTimeout(typeEffect, 320);
+            }
+        }
+        typeEffect();
+
+       
+        </script>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#timeline">Portofolio</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <button class="px-3 py-1 text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                <li><a href="https://website-lutfi.my.canva.site/webiste-portofolio" target="_blank">Resume</a></li>
+           </button>
+        </ul>
+    </nav>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector(".menu");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+    <header class="hero" id="home">
+      <div class="hero-content" id="canvas">
+        <h1>MY Portofolio</h1>
+        <p>
+            welcome to my portfolio website
+        </p>
+      </div>
+      <a href="#about" class="scroll-indicator">Explore</a>
+     <script src="/src/main.jsx" ></script>
+    </header>
+
+
+
+ <section id="about">
+    <div class="container" data-aos="fade-up" data-aos-duration="800">
+        <div class="profile-section">
+          <div class="profile-image">
+            <img
+              src="fc90853876cd8740cde73c47504e0e08.jpg"
+              alt="Profile Picture"
+            />
+          </div>
+          <div class="profile-info">
+            <h1 class="Purple-500">MY Portofolio</h1>
+            <p class="title">Muhammad Lutfi Andika</p>
+            <div class="social-links">
+              <a href="#" class="social-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                  />
+                  <path d="M9 18c-4.51 2-5-2-7-2" />
+                </svg>
+              </a>
+              <a href="#" class="social-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  />
+                  <rect width="4" height="12" x="2" y="9" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </a>
+              <a href="#" class="social-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2" />
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <div class="about-section" data-aos="fade-up" data-aos-duration="1000">
+          <h2>About Me</h2>
+          <p>
+            "Halo! Saya Muhammad Lutfi Andika, seorang pelajar di
+             Smk Telekomunikasi Telesandi Bekasi. 
+             Saya memiliki minat dalam bidang Web development.
+              Di sini, Anda bisa melihat beberapa proyek dan tugas yang telah saya kerjakan."
+          </p> 
+        </div>
+    </section>
+    
+        <header class="hero-about">
+          <a href="#timeline" class="scroll-indicator">Explore</a>
+        </header>
+        
+    <section id="timeline" class="timeline"  data-aos="fade-up" data-aos-duration="1000">
+      <h2 data-aos="fade-right" data-aos-duration="800">Projek</h2>
+      
+      <div class="timeline-item" data-aos="fade-up-left" data-aos-duration="1000">
+        <div class="timeline-year">Berita Digital</div>
+        <div class="timeline-title">Berita Digital website lomba website yang bertema Pendidikan</div>
+        <div class="timeline-description">
+          <button class="text-blue-600 font-semibold hover:text-blue-800">
+            <a href="https://lutfi-dika.github.io/berita-digital-pendidikan-/">Next</a>
+          </button>
+        </div>
+      </div>
+
+      <div class="timeline-item"  data-aos="fade-up-right" data-aos-duration="1000">
+        <div class="timeline-year">ibadah-ramadhan</div>
+        <div class="timeline-title">Ibadah Ramadhan adalah website untuk memberi informasi tentang Ramadhan</div>
+        <div class="timeline-description">
+            <button class="text-blue-600 font-semibold hover:text-blue-800"><a href="https://lutfi-dika.github.io/ibadah-ramadhan/">Next</a></button>
+        </div>
+      </div>
+
+      <div class="timeline-item"  data-aos="fade-up-left" data-aos-duration="1000">
+        <div class="timeline-year">Dashboard Admin Pareto ormas BSI</div>
+        <div class="timeline-title">website ini berisi tentang pareta ormas</div>
+        <div class="timeline-description">
+            <button class="text-blue-600 font-semibold hover:text-blue-800"><a href="https://lutfi-dika.github.io/-website-dashbord/">Next</a></button>
+        </div>
+      </div>
+
+      <div class="timeline-item"  data-aos="fade-up-right" data-aos-duration="1000">
+        <div class="timeline-year">Website Dian_tas@galery</div>
+        <div class="timeline-title">Website ini berisi tentang jualan tas</div>
+        <div class="timeline-description">
+            <button class="text-blue-600 font-semibold hover:text-blue-800"><a href="https://lutfi-dika.github.io/website-jualan-bag/">Next</a></button> 
+        </div>
+      </div>
+
+     <div class="timeline-item"  data-aos="fade-up-left" data-aos-duration="1000">
+        <div class="timeline-year">Academy Coding</div>
+        <div class="timeline-title">Website ini berisi tentang belajar coding dan pemahan tentang bahasa program</div>
+        <div class="timeline-description">
+            <button class="text-blue-600 font-semibold hover:text-blue-800"><a href="https://lutfi-dika.github.io/Website-Academy-Coding/">Next</a></button>
+        </div>
+    </div>
+
+      <div class="timeline-item"  data-aos="fade-up-right" data-aos-duration="1000">
+        <div class="timeline-year">Jaya Suti Abadi</div>
+        <div class="timeline-title">Website ini untuk sekolah jaya Suti Abadi</div>
+        <div class="timeline-description">
+            <button class="text-blue-600 font-semibold hover:text-blue-800"><a href="https://lutfi-dika.github.io/Jaya-Suti-Abadi/">Next</a></button>
+        </div>
+      </div>
+
+      
+      <div class="timeline-item"  data-aos="fade-up-right" data-aos-duration="1000">
+        <div class="timeline-year">Website Portofolio Canva</div>
+        <div class="timeline-title">Website ini untuk portofolio yang menggunakan canva</div>
+        <div class="timeline-description">
+            <button class="text-blue-600 font-semibold hover:text-blue-800"><a href="https://website-lutfi.my.canva.site/webiste-portofolio">Next</a></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="resources" id="skill">
+        <h2 data-aos="fade-right" data-aos-duration="500">My Skills</h2>
+        <div class="container-skill" data-aos="fade-up" data-aos-duration="700">
+            <div class="skill">
+                <div class="skill-name">HTML</div>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="90">0%</div>
+                </div>
+            </div>
+            
+            <div class="skill">
+                <div class="skill-name">CSS</div>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="80">0%</div>
+                </div>
+            </div>
+            
+            <div class="skill">
+                <div class="skill-name">JavaScript</div>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="70">0%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Boostap</div>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="68">0%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">Geekshelp</div>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="70">0%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <div class="skill-name">AI</div>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="70">0%</div>
+                </div>
+            </div>
+        </div>
+       </div>
+       <script src="main.js"></script>
+   </section>
+
+    <section class="features" id="service">
+      <h2 class="logo" id="services" data-aos="fade-right" data-aos-duration="800">Service</h2>
+      <div class="features-grid">
+        <div class="feature-card" data-aos="fade-up" data-aos-duration="300">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Desain poster digital</h3>
+          <p class="feature-description">
+            Selain itu saya juga bisa membuat desain poster digital yang menarik 
+          </p>
+        </div>
+        <div class="feature-card " data-aos="fade-up" data-aos-duration="600">
+          <div class="feature-icon" >🔄</div>
+          <h3 class="feature-title">Web Development </h3>
+          <p class="feature-description">
+            Dan kami juga Sebagai developer website sederhana 
+          </p>
+        </div>
+        <div class="feature-card" data-aos="fade-up" data-aos-duration="1200">
+          <div class="feature-icon">🌐</div>
+          <h3 class="feature-title">Sosial Media management</h3>
+          <p class="feature-description">
+            Dan kami juga ada layanan sosial media management untuk costamer
+          </p>
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="resources" id="contact">
+      <h2 data-aos="fade-up-right">contact</h2>
+      <div class="resources-grid">
+        <a
+          class="resource-card"
+          target="_blank"
+          data-aos="fade-up"
+          data-aos-duration="300"
+        >
+          <h3 class="resource-title">Home</h3>
+          <p class="resource-description">
+            Bekasi-tambun selatan-indonesia
+          </p>
+        </a>
+
+        <a class="resource-card" target="_blank" data-aos="fade-up" data-aos-duration="600">
+          <h3 class="resource-title">Phone Number</h3>
+          <p class="resource-description">
+            62-812-9543-1853
+          </p>
+        </a>
+
+        <a
+          class="resource-card"
+          target="_blank"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          <h3 class="resource-title">Email Adres</h3>
+          <p class="resource-description">
+            Lutfiandika33@gmail.com
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About portofolio</h3>
+            <p>situs web yang menampilkan karya, prestasi, dan pengalaman seseorang atau perusahaan.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#timeline">Portofolio</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <!-- <button class="px-3 py-1 text-white bg-blue-500 rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                    <li><a href="https://website-lutfi.my.canva.site/webiste-portofolio" target="_blank">Resume</a></li>
+               </button> -->
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+               
+            </ul>
+              
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy;Portofolio|Muhammad Lutfi Andika</p>
+        </div>
+      </footer>
+    </div>
+    
+  </body>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</html>
