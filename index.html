@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>portofolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  
+  <link rel="website icon" type="jpg" href="336106bdd62c1e09153329d88506a798.jpg">
  
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
@@ -35,8 +35,11 @@
     h1{font-size:clamp(20px,3.5vw,36px);letter-spacing:0.6px;margin-bottom:8px}
     p{opacity:0.9}
     @media (max-width:520px){.frame{padding:28px}}
+    .frame:hover{
+      color: aliceblue;
+    }
     .logo{
-        font-size: 3.9rem;
+        font-size: 2.6rem;
         text-align: center;
         padding: 3rem;
         color: white;
@@ -123,15 +126,15 @@
 </header>
   <script>
     document.addEventListener('mousemove', e => {
-      const x = e.clientX / window.innerWidth * 90;
-      const y = e.clientY / window.innerHeight * 90;
+      const x = e.clientX / window.innerWidth * 100;
+      const y = e.clientY / window.innerHeight * 100;
       document.body.style.backgroundPosition = `${x}px ${y}px`;
     });
 
     document.addEventListener('touchmove', e => {
       const touch = e.touches[0];
-      const x = touch.clientX / window.innerWidth * 50;
-      const y = touch.clientY / window.innerHeight * 50;
+      const x = touch.clientX / window.innerWidth * 100;
+      const y = touch.clientY / window.innerHeight * 100;
       document.body.style.backgroundPosition = `${x}px ${y}px`;
     });
   </script>
