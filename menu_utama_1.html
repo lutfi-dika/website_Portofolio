@@ -55,6 +55,22 @@
         <p>
             welcome to my portfolio website
         </p>
+        <div class="logo" id="text_awal"  data-aos-duration="200000"></div>
+        <script>
+               const text_awal = "Front End";
+        let index_1 = 0;
+        function typeEffect() {
+            if (index_1 < text_awal.length) {
+                document.getElementById("text_awal").innerHTML += text_awal[index_1] + "&nbsp;";
+                index_1++;
+                setTimeout(typeEffect, 590);
+            }
+        }
+        typeEffect();
+
+       
+        </script>
+        
       </div>
       <a href="#about" class="scroll-indicator">Explore</a>
      <script src="/src/main.jsx" ></script>
