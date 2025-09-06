@@ -9,31 +9,35 @@
     <link rel="stylesheet" href="tentang.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="syle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://unpkg.com/lucide-icons/dist/umd/lucide.css" rel="stylesheet">
+    <script src="script.js"></script>
   </head>
   <body>
 
     <nav class="navbar">
-            <div class="logo" id="text"  data-aos-duration="10000"></div>
+          <div class="logo" id="text_awal_portofolio"  data-aos-duration="200000"></div>
         <script>
-               const text = "my portfolio";
-        let index = 0;
+               const text_awal_portofolio = "My Portofolio";
+        let index_2 = 0;
         function typeEffect() {
-            if (index < text.length) {
-                document.getElementById("text").innerHTML += text[index] + "&nbsp;";
-                index++;
-                setTimeout(typeEffect, 320);
+            if (index_2 < text_awal_portofolio.length) {
+                document.getElementById("text_awal_portofolio").innerHTML += text_awal_portofolio[index_2] + "&nbsp;";
+                index_2++;
+                setTimeout(typeEffect, 590);
             }
         }
         typeEffect();
 
        
         </script>
+        
         <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <ul class="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#timeline">Portofolio</a></li>
+            <li><a href="#projects">Portofolio</a></li>
             <li><a href="#skill">Skill</a></li>
             <li><a href="#service">Service</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -75,7 +79,6 @@
       <a href="#about" class="scroll-indicator">Explore</a>
      <script src="/src/main.jsx" ></script>
     </header>
-
 
 
  <section id="about">
@@ -177,10 +180,10 @@
     </section>
     
         <header class="hero-about">
-          <a href="#timeline" class="scroll-indicator">Explore</a>
+          <a href="#projects" class="scroll-indicator">Explore</a>
         </header>
         
-    <section id="timeline" class="timeline"  data-aos="fade-up" data-aos-duration="1000">
+    <!-- <section id="timeline" class="timeline"  data-aos="fade-up" data-aos-duration="1000">
       <h2 data-aos="fade-right" data-aos-duration="800">Projek</h2>
       
       <div class="timeline-item" data-aos="fade-up-left" data-aos-duration="1000">
@@ -241,52 +244,331 @@
             <button class="text-blue-600 font-semibold hover:text-blue-800"><a href="https://website-lutfi.my.canva.site/webiste-portofolio">Next</a></button>
         </div>
       </div>
-    </section>
+    </section> --> 
+
+ <section id="projects" class="projects">
+        <div class="container">
+          <div class="section-header">
+            <!-- <h2 class="section-title-1">Our Projects</h2>
+            <style>
+              .project-title-1 {
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-bottom: 12px;
+                color: var(--text-primary);
+              }
+
+            </style> -->
+            <section class="timeline-1"  data-aos="fade-up" data-aos-duration="1000">
+            <h2 data-aos="fade-right" data-aos-duration="800">Project</h2>
+            <!-- <p class="section-subtitle-1">
+              Explore our latest work and creative solutions
+            </p> -->
+            <style>
+              .timeline-1{
+                text-align: center;
+                font-size: 2.9rem;
+                font-weight: 600;
+                margin-bottom: 12px;
+                color: var(--text-secondary);
+                margin-bottom: 6%;
+              }
+            </style>
+          </div>
+
+          <!-- Project Filter Tabs -->
+
+ <section id="projects">
+  <div class="project-filters">
+    <button class="filter-btn active" data-filter="all">All Project</button>
+    <button class="filter-btn" data-filter="web edukasi">Web edukasi</button>
+    <button class="filter-btn" data-filter="Web Aplikasi">web applikasi</button>
+    <button class="filter-btn" data-filter="web E-commerce">web E-commerce</button>
+    <button class="filter-btn" data-filter="web portfolio">web portofolio</button>
+  </div>
+
+
+      <!-- Modal untuk project detail -->
+      <div id="service-modal" class="modal">
+       <div class="modal-content">
+       <span class="close-btn">&times;</span>
+         <div id="modal-body"></div>
+      </div>
+    </div>
+
+
+          <!-- Projects Grid -->
+        <div class="projects-grid">
+            <div class="project-card" data-category="web edukasi">
+              <div class="project-image">
+                <img
+                  src="https://i.pinimg.com/1200x/05/bd/0b/05bd0b10ef8c1aef8182e461a48a1ee3.jpg"
+                  alt="edukasi"
+                />
+                <div class="project-overlay">
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span class="project-category">Berita Digital</span>
+                </div>
+                <h3 class="project-title">educational website</h3>
+                <p class="project-description">
+                 Berita Digital website lomba website yang bertema Pendidikan
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag"><a href="https://lutfi-dika.github.io/berita-digital-pendidikan-/">Next</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="web edukasi">
+              <div class="project-image">
+                <img
+                  src="https://i.pinimg.com/736x/44/bb/7f/44bb7f85b436ac2d85147df10984faf9.jpg"
+                  alt="web edukasi"
+                />
+                <div class="project-overlay">
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span class="project-category">ibadah-ramadhan</span>
+                  <!-- <span class="project-date">2024</span> -->
+                </div>
+                <h3 class="project-title">educational website</h3>
+                <p class="project-description">
+                 Ibadah Ramadhan adalah website untuk memberi informasi tentang Ramadhan
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag"><a href="Ibadah Ramadhan adalah website untuk memberi informasi tentang Ramadhan">Next</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="Web Aplikasi">
+              <div class="project-image">
+                <img
+                  src="https://i.pinimg.com/736x/cd/f9/e2/cdf9e249bade135e6ef8f298776f07ac.jpg"
+                  alt="Web Applikasi"
+                />
+                <div class="project-overlay">
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span class="project-category">Dashboard Admin Pareto ormas BSI</span>
+                </div>
+                <h3 class="project-title">Web Aplikasi</h3>
+                <p class="project-description">
+                  website ini berisi tentang pareta ormas
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag"><a href="https://lutfi-dika.github.io/-website-dashbord/">Next</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="web E-commerce">
+              <div class="project-image">
+                <img
+                  src="https://i.pinimg.com/736x/19/0b/55/190b55f7638854dce3aed43cf185317f.jpg"
+                  alt="Brand Identity"
+                />
+                <div class="project-overlay">
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span class="project-category">Website Dian_tas@galery</span>
+                </div>
+                <h3 class="project-title">Website E-commerce</h3>
+                <p class="project-description">
+                  Website ini berisi tentang jualan tas
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag"><a href="https://lutfi-dika.github.io/website-jualan-bag/">Next</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="web edukasi">
+              <div class="project-image">
+                <img
+                  src="https://i.pinimg.com/736x/37/53/bf/3753bfa0de0319192cc9f2d09a1e6167.jpg"
+                  alt="Restaurant Website"
+                />
+                <div class="project-overlay">
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span class="project-category">Academy Coding</span>
+                </div>
+                <h3 class="project-title">Website educational</h3>
+                <p class="project-description">
+                  Website ini berisi tentang belajar coding dan pemahan tentang bahasa program
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag"><a href="https://lutfi-dika.github.io/Website-Academy-Coding/">Next</a></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card" data-category="web portfolio">
+              <div class="project-image">
+                <img
+                  src="https://tse2.mm.bing.net/th/id/OIP.P8q2dvP7uC5ggLIv_u1bqQHaHg?pid=Api&P=0&h=220"
+                  alt="Travel App"
+                />
+                <div class="project-overlay">
+                </div>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span class="project-category">Jaya Suti Abadi</span>
+                </div>
+                <h3 class="project-title">Website Portofolio</h3>
+                <p class="project-description">
+                 Website ini untuk sekolah jaya Suti Abadi
+                </p>
+                <div class="project-tech"> 
+                  <span class="tech-tag"><a href="https://lutfi-dika.github.io/Jaya-Suti-Abadi/">next</a></span>
+                </div>
+              </div>
+
+              
+            </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> 
+
+
 
     <section class="resources" id="skill">
-        <h2 data-aos="fade-right" data-aos-duration="500">My Skills</h2>
-        <div class="container-skill" data-aos="fade-up" data-aos-duration="700">
-            <div class="skill">
-                <div class="skill-name">HTML</div>
-                <div class="progress-bar">
-                    <div class="progress" data-progress="90">0%</div>
+        
+       <section id="projects" class="projects">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">Skill</h2>
+            <p class="section-subtitle">
+              Keterampilan dan keunggulan yang kami tawarkan
+            </p>
+            <style>
+              .section-subtitle{
+                text-align: center;
+                margin-bottom: 6%;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 1.4rem;
+              }
+            </style>
+          </div>
+
+          <!-- Project Filter Tabs -->
+
+ <section id="projects">
+  <div class="project-filters">
+    <button class="filter-btn active" data-filter="all">All Project</button>
+    <button class="filter-btn" data-filter="front end">Front End</button>
+    <button class="filter-btn" data-filter="backend dan db">Backend</button>
+  </div>
+
+
+      <!-- Modal untuk project detail -->
+      <div id="service-modal" class="modal">
+       <div class="modal-content">
+       <span class="close-btn">&times;</span>
+         <div id="modal-body"></div>
+      </div>
+    </div>
+
+
+          <!-- Projects Grid -->
+        <div class="projects-grid">
+            <div class="project-card" data-category="front end">
+              <div class="project-image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTf-Clk_BiCds3cO2b9L41dH_VQ-dmDDZnzLBMJlYE5cKoaMFmhl-1q6lvn1wbtoSju_GI&usqp=CAU"
+                  alt="edukasi"
+                />
+                <div class="project-overlay">
                 </div>
+              </div>
+              <div class="project-content">
+              </div>
             </div>
-            
-            <div class="skill">
-                <div class="skill-name">CSS</div>
-                <div class="progress-bar">
-                    <div class="progress" data-progress="80">0%</div>
+
+            <div class="project-card" data-category="front end">
+              <div class="project-image">
+                <img
+                  src="https://static.vecteezy.com/system/resources/previews/011/293/677/non_2x/creative-trendy-css-letters-logo-icon-design-template-illustration-vector.jpg"
+                  alt="web edukasi"
+                />
+                <div class="project-overlay">
                 </div>
+              </div>
+              <div class="project-content">
+              </div>
             </div>
-            
-            <div class="skill">
-                <div class="skill-name">JavaScript</div>
-                <div class="progress-bar">
-                    <div class="progress" data-progress="70">0%</div>
+
+            <div class="project-card" data-category="front end">
+              <div class="project-image">
+                <img
+                  src="https://st3.depositphotos.com/16030310/18317/v/1600/depositphotos_183176360-stock-illustration-letters-logo-initial-logo-identity.jpg"
+                  alt="Web Applikasi"
+                />
+                <div class="project-overlay">
                 </div>
+              </div>
+              <div class="project-content">
+              </div>
             </div>
-            <div class="skill">
-                <div class="skill-name">Boostap</div>
-                <div class="progress-bar">
-                    <div class="progress" data-progress="68">0%</div>
+
+            <div class="project-card" data-category="front end">
+              <div class="project-image">
+                <img
+                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUnlf25ZN3zawKt5UcqxtdJkWHHVEG5RJj1w&s"
+                  alt="Brand Identity"
+                />
+                <div class="project-overlay">
                 </div>
+              </div>
+              <div class="project-content">
+              </div>
             </div>
-            <div class="skill">
-                <div class="skill-name">Geekshelp</div>
-                <div class="progress-bar">
-                    <div class="progress" data-progress="70">0%</div>
+
+            <div class="project-card" data-category="backend dan db">
+              <div class="project-image">
+                <img
+                  src="https://i.pinimg.com/736x/9d/4a/b8/9d4ab883b534c687c4179aeeb2e5d7d1.jpg"
+                  alt="Restaurant Website"
+                />
+                <div class="project-overlay">
                 </div>
+              </div>
+              <div class="project-content">
+              </div>
             </div>
-            <div class="skill">
-                <div class="skill-name">AI</div>
-                <div class="progress-bar">
-                    <div class="progress" data-progress="70">0%</div>
+
+            <div class="project-card" data-category="backend dan db">
+              <div class="project-image">
+                <img
+                  src="https://i.pinimg.com/736x/b6/de/7d/b6de7d5e806cb2763f0395867374cae9.jpg"
+                  alt="Travel App"
+                />
+                <div class="project-overlay">
                 </div>
+              </div>
+              <div class="project-content">
+              </div>
             </div>
+              </div>
+            </div>
+          </div>
         </div>
-       </div>
-       <script src="main.js"></script>
+      </section> 
    </section>
 
     <section class="features" id="service">
@@ -308,9 +590,9 @@
         </div>
         <div class="feature-card" data-aos="fade-up" data-aos-duration="1200">
           <div class="feature-icon">🌐</div>
-          <h3 class="feature-title">Sosial Media management</h3>
+          <h3 class="feature-title">Ui/Ux</h3>
           <p class="feature-description">
-            Dan kami juga ada layanan sosial media management untuk costamer
+           Kami juga menyediakan layanan manajemen media sosial untuk klien yang ingin memperkuat identitas visual dan pengalaman pengguna mereka secara konsisten di berbagai platform
           </p>
         </div>
         
@@ -358,6 +640,7 @@
           <div class="footer-section">
             <h3>About portofolio</h3>
             <p>situs web yang menampilkan karya, prestasi, dan pengalaman seseorang atau perusahaan.</p>
+           <a href="contact.html">Contact Kami</a>
           </div>
           <div class="footer-section">
             <h3>Quick Links</h3>

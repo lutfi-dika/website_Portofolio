@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Navigation Header -->
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="nav-logo">
+                <img
+                  src="336106bdd62c1e09153329d88506a798.jpg"
+                  alt="Webkraf"
+                  class="logo-image"
+                />
+            <div class="logo" id="text" data-aos-duration="10000"></div>
+            <script>
+              const text = "Portofolio";
+              let index = 0;
+              function typeEffect() {
+                if (index < text.length) {
+                  document.getElementById("text").innerHTML +=
+                    text[index] + "&nbsp;";
+                  index++;
+                  setTimeout(typeEffect, 320);
+                }
+              }
+              typeEffect();
+            </script>
+          </div>
+          <div class="nav-menu" id="nav-menu">
+            <a href="menu_utama_1.html" class="nav-link active">Home</a>
+            <!-- <a href="#services" class="nav-link">Services</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">projects</a>
+            <a href="contact.html" class="nav-link">Contact</a> -->
+          </div>
+          <div class="nav-toggle" id="nav-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Ready to start your project? Let's talk!
+          </p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <p>lutfiandika33@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h4>Phone</h4>
+                <p>+62 812-9543-1853</p>
+              </div>
+            </div>
+          </div>
+          <form class="contact-form" action="https://formspree.io/f/xgvlrvwr" method="post">
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" name="Username" required />
+            </div>
+            <div class="form-group">
+              <input type="email" placeholder="Your Email" name="email" required />
+            </div>
+            <div class="form-group">
+              <textarea placeholder="Your Message" rows="5" name="Your_Message" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    window.onbeforeunload = () => {
+  for(const form of document.getElementsByTagName('form')) {
+    form.reset();
+  }
+}
+  </script>
+</html>
